@@ -1,19 +1,19 @@
 - meta:
     map: farm_trial_map
-    node: WayPointStart
+    node: WPinit
     pointset: farm_trial_map
   node:
     edges:
     - action: move_base
-      edge_id: WayPointStart_WayPointLine1Point1
+      edge_id: WPinit_WPstart
       inflation_radius: 0.0
       map_2d: cropped
-      node: WayPointLine1Point1
+      node: WPstart
       recovery_behaviours_config: ''
       top_vel: 0.55
     localise_by_topic: ''
     map: farm_trial_map
-    name: WayPointStart
+    name: WPinit
     pointset: farm_trial_map
     pose:
       orientation:
@@ -22,8 +22,212 @@
         y: 0.0
         z: 0.0
       position:
+        x: -8.0
+        y: -5
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.2
+- meta:
+    map: farm_trial_map
+    node: WPstart
+    pointset: farm_trial_map
+  node:
+    edges:
+    - action: move_base
+      edge_id: WPstart_WPinit
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPinit
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPstart_WPline1_0
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline1_0
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPstart_WPline2_0
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline2_0
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPstart_WPline3_0
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline3_0
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPstart_WPline4_0
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline4_0
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPstart_WPline5_0
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline5_0
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPstart_WPline6_0
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline6_0
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: farm_trial_map
+    name: WPstart
+    pointset: farm_trial_map
+    pose:
+      orientation:
+        w: 1.0
         x: 0.0
         y: 0.0
+        z: 0.0
+      position:
+        x: -8.0
+        y: 0
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.2
+###########################################################################################################################################################################################
+################################################################ line 1 ###################################################################################################################
+###########################################################################################################################################################################################
+- meta:
+    map: farm_trial_map
+    node: WPline1_0
+    pointset: farm_trial_map
+  node:
+    edges:
+    - action: move_base
+      edge_id: WPline1_0_WPstart
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPstart
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPline1_0_WPline1_1
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline1_1
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPline1_0_WPline2_0
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline2_0
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: farm_trial_map
+    name: WPline1_0
+    pointset: farm_trial_map
+    pose:
+      orientation:
+        w: 1.0
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      position:
+        x: -6.5
+        y: -3.75
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.2
+- meta:
+    map: farm_trial_map
+    node: WPline1_1
+    pointset: farm_trial_map
+  node:
+    edges:
+    - action: move_base
+      edge_id: WPline1_1_WPline1_0
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline1_0
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPline1_1_WPline2_1
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline2_1
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: farm_trial_map
+    name: WPline1_1
+    pointset: farm_trial_map
+    pose:
+      orientation:
+        w: 1.0
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      position:
+        x: 6.5
+        y: -3.75
         z: 0.0
     verts:
     - x: 0.689999997616
@@ -45,46 +249,42 @@
     xy_goal_tolerance: 0.3
     yaw_goal_tolerance: 0.2
 
+###########################################################################################################################################################################################
+################################################################ line 2 ###################################################################################################################
+###########################################################################################################################################################################################
 - meta:
-    map: test
-    node: WayPoint1
-    pointset: test
+    map: farm_trial_map
+    node: WPline2_1
+    pointset: farm_trial_map
   node:
     edges:
     - action: move_base
-      edge_id: WayPoint1_WayPoint0
+      edge_id: WPline2_1_WPline1_1
       inflation_radius: 0.0
       map_2d: cropped
-      node: WayPoint0
+      node: WPline1_1
       recovery_behaviours_config: ''
       top_vel: 0.55
     - action: move_base
-      edge_id: WayPoint0_WayPoint4
+      edge_id: WPline2_1_WPline2_0
       inflation_radius: 0.0
       map_2d: cropped
-      node: WayPoint4
-      recovery_behaviours_config: ''
-      top_vel: 0.55
-    - action: move_base
-      edge_id: WayPoint0_WayPoint5
-      inflation_radius: 0.0
-      map_2d: cropped
-      node: WayPoint5
+      node: WPline2_0
       recovery_behaviours_config: ''
       top_vel: 0.55
     localise_by_topic: ''
-    map: test
-    name: WayPoint1
-    pointset: test
+    map: farm_trial_map
+    name: WPline2_1
+    pointset: farm_trial_map
     pose:
       orientation:
-        w: 1.0
-        x: 0.0
+        w: 0.0
+        x: 1.0
         y: 0.0
         z: 0.0
       position:
-        x: 5.0
-        y: 0.0
+        x: 6.5
+        y: -2.70
         z: 0.0
     verts:
     - x: 0.689999997616
@@ -105,47 +305,46 @@
       y: -0.287000000477
     xy_goal_tolerance: 0.3
     yaw_goal_tolerance: 0.2
-
 - meta:
-    map: test
-    node: WayPoint2
-    pointset: test
+    map: farm_trial_map
+    node: WPline2_0
+    pointset: farm_trial_map
   node:
     edges:
     - action: move_base
-      edge_id: WayPoint2_WayPoint1
+      edge_id: WPline2_0_WPstart
       inflation_radius: 0.0
       map_2d: cropped
-      node: WayPoint1
+      node: WPstart
       recovery_behaviours_config: ''
       top_vel: 0.55
     - action: move_base
-      edge_id: WayPoint2_WayPoint3
+      edge_id: WPline2_0_WPline1_0
       inflation_radius: 0.0
       map_2d: cropped
-      node: WayPoint3
+      node: WPline1_0
       recovery_behaviours_config: ''
       top_vel: 0.55
     - action: move_base
-      edge_id: WayPoint2_WayPoint5
+      edge_id: WPline2_0_WPline2_1
       inflation_radius: 0.0
       map_2d: cropped
-      node: WayPoint5
+      node: WPline2_1
       recovery_behaviours_config: ''
       top_vel: 0.55
     localise_by_topic: ''
-    map: test
-    name: WayPoint2
-    pointset: test
+    map: farm_trial_map
+    name: WPline2_0
+    pointset: farm_trial_map
     pose:
       orientation:
-        w: 1.0
-        x: 0.0
+        w: 0.0
+        x: 1.0
         y: 0.0
         z: 0.0
       position:
-        x: 5.0
-        y: 5.0
+        x: -6.5
+        y: -2.70
         z: 0.0
     verts:
     - x: 0.689999997616
@@ -166,24 +365,40 @@
       y: -0.287000000477
     xy_goal_tolerance: 0.3
     yaw_goal_tolerance: 0.2
-
+###########################################################################################################################################################################################
+################################################################ line 3 ###################################################################################################################
+###########################################################################################################################################################################################
 - meta:
-    map: test
-    node: WayPoint3
-    pointset: test
+    map: farm_trial_map
+    node: WPline3_0
+    pointset: farm_trial_map
   node:
     edges:
     - action: move_base
-      edge_id: WayPoint3_WayPoint4
+      edge_id: WPline3_0_WPstart
       inflation_radius: 0.0
       map_2d: cropped
-      node: WayPoint4
+      node: WPstart
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPline3_0_WPline3_1
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline3_1
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPline3_0_WPline4_0
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline4_0
       recovery_behaviours_config: ''
       top_vel: 0.55
     localise_by_topic: ''
-    map: test
-    name: WayPoint3
-    pointset: test
+    map: farm_trial_map
+    name: WPline3_0
+    pointset: farm_trial_map
     pose:
       orientation:
         w: 1.0
@@ -191,8 +406,8 @@
         y: 0.0
         z: 0.0
       position:
-        x: 0.0
-        y: 5.0
+        x: -6.5
+        y: -0.7
         z: 0.0
     verts:
     - x: 0.689999997616
@@ -213,31 +428,30 @@
       y: -0.287000000477
     xy_goal_tolerance: 0.3
     yaw_goal_tolerance: 0.2
-
 - meta:
-    map: test
-    node: WayPoint4
-    pointset: test
+    map: farm_trial_map
+    node: WPline3_1
+    pointset: farm_trial_map
   node:
     edges:
     - action: move_base
-      edge_id: WayPoint4_WayPoint0
+      edge_id: WPline3_1_WPline4_1
       inflation_radius: 0.0
       map_2d: cropped
-      node: WayPoint0
+      node: WPline4_1
       recovery_behaviours_config: ''
       top_vel: 0.55
     - action: move_base
-      edge_id: WayPoint4_WayPoint2
+      edge_id: WPline3_1_WPline3_0
       inflation_radius: 0.0
       map_2d: cropped
-      node: WayPoint2
+      node: WPline3_0
       recovery_behaviours_config: ''
       top_vel: 0.55
     localise_by_topic: ''
-    map: test
-    name: WayPoint4
-    pointset: test
+    map: farm_trial_map
+    name: WPline3_1
+    pointset: farm_trial_map
     pose:
       orientation:
         w: 1.0
@@ -245,8 +459,8 @@
         y: 0.0
         z: 0.0
       position:
-        x: 2.5
-        y: 2.5
+        x: 6.5
+        y: -0.7
         z: 0.0
     verts:
     - x: 0.689999997616
@@ -267,31 +481,156 @@
       y: -0.287000000477
     xy_goal_tolerance: 0.3
     yaw_goal_tolerance: 0.2
-
+###########################################################################################################################################################################################
+################################################################ line 4 ###################################################################################################################
+###########################################################################################################################################################################################
 - meta:
-    map: test
-    node: WayPoint5
-    pointset: test
+    map: farm_trial_map
+    node: WPline4_1
+    pointset: farm_trial_map
   node:
     edges:
     - action: move_base
-      edge_id: WayPoint5_WayPoint1
+      edge_id: WPline4_1_WPline3_1
       inflation_radius: 0.0
       map_2d: cropped
-      node: WayPoint1
+      node: WPline3_1
       recovery_behaviours_config: ''
       top_vel: 0.55
     - action: move_base
-      edge_id: WayPoint5_WayPoint2
+      edge_id: WPline4_1_WPline4_0
       inflation_radius: 0.0
       map_2d: cropped
-      node: WayPoint2
+      node: WPline4_0
       recovery_behaviours_config: ''
       top_vel: 0.55
     localise_by_topic: ''
-    map: test
-    name: WayPoint5
-    pointset: test
+    map: farm_trial_map
+    name: WPline4_1
+    pointset: farm_trial_map
+    pose:
+      orientation:
+        w: 0.0
+        x: 1.0
+        y: 0.0
+        z: 0.0
+      position:
+        x: 6.5
+        y: 0.24
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.2
+- meta:
+    map: farm_trial_map
+    node: WPline4_0
+    pointset: farm_trial_map
+  node:
+    edges:
+    - action: move_base
+      edge_id: WPline4_0_WPstart
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPstart
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPline4_0_WPline3_0
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline3_0
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPline4_0_WPline4_1
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline4_1
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: farm_trial_map
+    name: WPline4_0
+    pointset: farm_trial_map
+    pose:
+      orientation:
+        w: 0.0
+        x: 1.0
+        y: 0.0
+        z: 0.0
+      position:
+        x: -6.5
+        y: 0.24
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.2
+###########################################################################################################################################################################################
+################################################################ line 5 ###################################################################################################################
+###########################################################################################################################################################################################
+- meta:
+    map: farm_trial_map
+    node: WPline5_0
+    pointset: farm_trial_map
+  node:
+    edges:
+    - action: move_base
+      edge_id: WPline5_0_WPstart
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPstart
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPline5_0_WPline5_1
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline5_1
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPline5_0_WPline6_0
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline6_0
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: farm_trial_map
+    name: WPline5_0
+    pointset: farm_trial_map
     pose:
       orientation:
         w: 1.0
@@ -299,8 +638,177 @@
         y: 0.0
         z: 0.0
       position:
-        x: 7.5
-        y: 2.5
+        x: -6.5
+        y: 2.2
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.2
+- meta:
+    map: farm_trial_map
+    node: WPline5_1
+    pointset: farm_trial_map
+  node:
+    edges:
+    - action: move_base
+      edge_id: WPline5_1_WPline6_1
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline6_1
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPline5_1_WPline5_0
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline5_0
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: farm_trial_map
+    name: WPline5_1
+    pointset: farm_trial_map
+    pose:
+      orientation:
+        w: 1.0
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      position:
+        x: 6.5
+        y: 2.2
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.2
+###########################################################################################################################################################################################
+################################################################ line 6 ###################################################################################################################
+###########################################################################################################################################################################################
+- meta:
+    map: farm_trial_map
+    node: WPline6_1
+    pointset: farm_trial_map
+  node:
+    edges:
+    - action: move_base
+      edge_id: WPline6_1_WPline5_1
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline5_1
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPline6_1_WPline6_0
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline6_0
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: farm_trial_map
+    name: WPline6_1
+    pointset: farm_trial_map
+    pose:
+      orientation:
+        w: 0.0
+        x: 1.0
+        y: 0.0
+        z: 0.0
+      position:
+        x: 6.5
+        y: 3.2
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.2
+- meta:
+    map: farm_trial_map
+    node: WPline6_0
+    pointset: farm_trial_map
+  node:
+    edges:
+    - action: move_base
+      edge_id: WPline6_0_WPstart
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPstart
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPline6_0_WPline6_1
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline6_1
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WPline6_0_WPline5_0
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: WPline5_0
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: farm_trial_map
+    name: WPline6_0
+    pointset: farm_trial_map
+    pose:
+      orientation:
+        w: 0.0
+        x: 1.0
+        y: 0.0
+        z: 0.0
+      position:
+        x: -6.5
+        y: 3.2
         z: 0.0
     verts:
     - x: 0.689999997616

@@ -17,16 +17,7 @@ if __name__ == '__main__':
 
     # send first goal
     goal = GotoNodeGoal()
-    goal.target = "WayPoint1"
-    client.send_goal(goal)
-    status = client.wait_for_result() # wait until the action is complete
-    result = client.get_result()
-    rospy.loginfo("status is %s", status)
-    rospy.loginfo("result is %s", result)
-
-    # send second goal
-    goal.target = "WayPoint5"
-    # Fill in the goal here
+    goal.target = "WPstart"
     client.send_goal(goal)
     status = client.wait_for_result() # wait until the action is complete
     result = client.get_result()
