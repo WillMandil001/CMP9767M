@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <launch>
   <arg name="db_path" default="$(optenv HOME)/mongodb" />
-  <arg name="tmap" default="test" />
+  <!-- <arg name="tmap" default="test" /> -->
+  <arg name="tmap" default="farm_trial_map" />
   <arg name="robot_name" default="thorvald_001" />
   <arg name="pointset" default="$(arg tmap)" />
   <arg name="mon_nav_config_file"  default="" />
@@ -23,14 +24,7 @@
 
   <group ns="$(arg robot_name)">
 
-    <node pkg="topological_navigation" type="visualise_map.py" name="visualise_map" args="$(arg tmap)" respawn="true">
-      <remap from="topological_map" to="/topological_map"/>
-      <remap from="topological_map_zones/feedback" to="/topological_map_zones/feedback"/>
-      <remap from="topological_map_zones/update" to="/topological_map_zones/update"/>
-      <remap from="topological_map_zones/update_full" to="/topological_map_zones/update_full"/>
-      <remap from="topological_edges_policies" to="/topological_edges_policies"/>
-      <remap from="topological_map_visualisation" to="/topological_map_visualisation"/>
-    </node>
+    <node pkg="topological_navigation" type="visualise_map.py" name="visualise_map" args="$(arg tmap)" respawn="true"/>
 
     <node pkg="monitored_navigation" type="monitored_nav.py" name="monitored_nav" output="screen" args="$(arg mon_nav_config_file)">
       <remap from="/monitored_navigation/goal" to="monitored_navigation/goal" />
